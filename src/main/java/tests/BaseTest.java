@@ -27,9 +27,11 @@ public class BaseTest {
 
 	@BeforeMethod
 	public void methodLevelSetup() {
+		
+		String workingDir = System.getProperty("user.dir");
 
 		System.setProperty("webdriver.chrome.driver",
-				"D:\\Dineshkumar.M\\Automation\\eclipse\\Driver\\chromedriver.exe");
+				workingDir + "\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
