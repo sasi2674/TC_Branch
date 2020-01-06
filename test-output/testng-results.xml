@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="104606" started-at="2020-01-03T14:57:09Z" finished-at="2020-01-03T14:58:53Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="90878" started-at="2020-01-03T14:57:09Z" finished-at="2020-01-03T14:58:40Z">
+      <class name="tests.TC_001_Login_Valid1">
+        <test-method status="PASS" signature="classLevelSetup()[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519]" name="classLevelSetup" is-config="true" duration-ms="22" started-at="2020-01-03T14:57:09Z" finished-at="2020-01-03T14:57:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classLevelSetup -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519]" name="methodLevelSetup" is-config="true" duration-ms="15308" started-at="2020-01-03T14:57:09Z" finished-at="2020-01-03T14:57:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="PASS" signature="Invalid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519]" name="Invalid_Login_Test" duration-ms="12308" started-at="2020-01-03T14:57:24Z" description="Login Testcase 01" finished-at="2020-01-03T14:57:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_Login_Test -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519]" name="teardown" is-config="true" duration-ms="1528" started-at="2020-01-03T14:57:36Z" finished-at="2020-01-03T14:57:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Invalid_Login_Test status=SUCCESS method=TC_001_Login_Valid1.Invalid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519]" name="methodLevelSetup" is-config="true" duration-ms="10192" started-at="2020-01-03T14:57:38Z" finished-at="2020-01-03T14:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="PASS" signature="Valid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519]" name="Valid_Login_Test" duration-ms="50176" started-at="2020-01-03T14:57:48Z" description="Login Testcase 02" finished-at="2020-01-03T14:58:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_Login_Test -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519]" name="teardown" is-config="true" duration-ms="1304" started-at="2020-01-03T14:58:38Z" finished-at="2020-01-03T14:58:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_Login_Test status=SUCCESS method=TC_001_Login_Valid1.Valid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid1@5bcab519] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.TC_001_Login_Valid1 -->
+    </test> <!-- Test1 -->
+    <test name="Test" duration-ms="104606" started-at="2020-01-03T14:57:09Z" finished-at="2020-01-03T14:58:53Z">
+      <class name="tests.TC_001_Login_Valid">
+        <test-method status="PASS" signature="classLevelSetup()[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="classLevelSetup" is-config="true" duration-ms="22" started-at="2020-01-03T14:57:09Z" finished-at="2020-01-03T14:57:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classLevelSetup -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="methodLevelSetup" is-config="true" duration-ms="15308" started-at="2020-01-03T14:57:09Z" finished-at="2020-01-03T14:57:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="SKIP" signature="Invalid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="Invalid_Login_Test" duration-ms="25820" started-at="2020-01-03T14:57:24Z" description="Invalid Login Scenario" finished-at="2020-01-03T14:57:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect Username/Password] but found [Test]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect Username/Password] but found [Test]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at pages.Login.Verify_Error_Msg(Login.java:65)
+at tests.TC_001_Login_Valid.Invalid_Login_Test(TC_001_Login_Valid.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_Login_Test -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="teardown" is-config="true" duration-ms="1293" started-at="2020-01-03T14:57:53Z" finished-at="2020-01-03T14:57:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Invalid_Login_Test status=SKIP method=TC_001_Login_Valid.Invalid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid@1794d431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="methodLevelSetup" is-config="true" duration-ms="7472" started-at="2020-01-03T14:57:54Z" finished-at="2020-01-03T14:58:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="FAIL" signature="Invalid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="Invalid_Login_Test" duration-ms="7138" started-at="2020-01-03T14:58:02Z" description="Invalid Login Scenario" finished-at="2020-01-03T14:58:09Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect Username/Password] but found [Test]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect Username/Password] but found [Test]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at pages.Login.Verify_Error_Msg(Login.java:65)
+at tests.TC_001_Login_Valid.Invalid_Login_Test(TC_001_Login_Valid.java:18)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Invalid_Login_Test -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="teardown" is-config="true" duration-ms="1471" started-at="2020-01-03T14:58:11Z" finished-at="2020-01-03T14:58:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Invalid_Login_Test status=FAILURE method=TC_001_Login_Valid.Invalid_Login_Test()[pri:0, instance:tests.TC_001_Login_Valid@1794d431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="methodLevelSetup()[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="methodLevelSetup" is-config="true" duration-ms="11734" started-at="2020-01-03T14:58:12Z" finished-at="2020-01-03T14:58:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodLevelSetup -->
+        <test-method status="PASS" signature="Valid_Login_Test()[pri:1, instance:tests.TC_001_Login_Valid@1794d431]" name="Valid_Login_Test" duration-ms="28108" started-at="2020-01-03T14:58:24Z" description="Valid Login Scenario" finished-at="2020-01-03T14:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_Login_Test -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:tests.TC_001_Login_Valid@1794d431]" name="teardown" is-config="true" duration-ms="1291" started-at="2020-01-03T14:58:52Z" finished-at="2020-01-03T14:58:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid_Login_Test status=SUCCESS method=TC_001_Login_Valid.Valid_Login_Test()[pri:1, instance:tests.TC_001_Login_Valid@1794d431] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.TC_001_Login_Valid -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
