@@ -31,7 +31,7 @@ public class BaseTest {
 		String workingDir = System.getProperty("user.dir");
 
 		System.setProperty("webdriver.chrome.driver",
-				workingDir + "\\Drivers\\chromedriver.exe");
+				workingDir + "\\Drivers\\chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
